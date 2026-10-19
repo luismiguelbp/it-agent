@@ -34,3 +34,7 @@ System administration can change or damage the host. These rules apply to skills
 - Never store passwords, API keys, tokens, or other secrets in the repository.
 - Prefer native operating-system tools when they already do the job.
 - Do not run administrative or maintenance commands during repository work unless the user explicitly asks for that operation on a stated host.
+
+## Commit messages
+
+Generate Commit Message using a Conventional Commit. Subject only: type(scope): imperative summary. Types: feat, fix, docs, style, refactor, perf, test, chore, ci. Include scope only when the change is in one area. No body, no markdown, no file list.
