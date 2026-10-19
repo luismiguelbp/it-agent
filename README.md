@@ -11,7 +11,7 @@ The project gives an agent a clear place to keep administration workflows (skill
 - Support the same kinds of tasks on macOS, Linux, and Windows.
 - Keep read-only inspection as the normal path, and require approval before changing a machine.
 
-Long-term task areas include system information and diagnostics, operating system and software updates, software installation and management, maintenance and troubleshooting, and automation of repetitive administration. None of those are implemented yet.
+Skill definitions cover system information, operating system updates, software installation and management, routine application updates, and security assessment. See [skills](.agents/skills/README.md). Executable tools, maintenance automation, and troubleshooting workflows are not implemented yet.
 
 ## Supported operating systems
 
@@ -60,11 +60,11 @@ System administration can change or damage the host. [AGENTS.md](AGENTS.md) is t
 Foundation only.
 
 - Repository license: [The Unlicense](LICENSE) (public domain).
-- Skills and tools are not implemented.
+- Five skills are defined. They are instructions only.
+- Tools are not implemented.
 - No system administration commands are part of this repository yet.
 
 ## Possible later work
 
-- A first read-only skill for system information, using native commands and no custom tool.
-- Skills for updates, software management, and maintenance, each with an explicit approval boundary.
+- Name the read-only native commands for system-information. Still no custom tool.
 - Shared tools with a small OS-specific branch once a skill cannot be done with instructions alone.
