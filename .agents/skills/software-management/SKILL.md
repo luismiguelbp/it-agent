@@ -20,6 +20,8 @@ Routine requests such as "update my applications" or "show outdated software" be
 
 The routine bulk upgrade stays in [update-applications](../update-applications/SKILL.md). Use this skill when that bulk command cannot update an app, or when the user asks to install, remove, or inspect a package.
 
+Apps on an Android phone or tablet belong to [Mobile-Android-Debugging](../mobile-android-debugging/SKILL.md). iOS apps and simulators belong to [Mobile-iOS-Debugging](../mobile-ios-debugging/SKILL.md). Installing `adb`, Xcode, or libimobiledevice on the computer stays here.
+
 ## Platforms
 
 macOS, Linux, and Windows. Inspect the mechanisms the host already has. Examples, not requirements: macOS native tools and Homebrew; the Linux distribution's package manager; Windows native tools and WinGet. Do not install a package manager just to answer a question.

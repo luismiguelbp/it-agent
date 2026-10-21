@@ -35,7 +35,9 @@ Skills are instructions and workflows: what to do, which checks to make, and whe
 | [system-updates](system-updates/SKILL.md) | Inspect and apply operating system updates. | OS updates only. Not application updates. |
 | [software-management](software-management/SKILL.md) | Install, uninstall, and inspect packages and dependencies. | Not the routine "update my applications" path. |
 | [update-applications](update-applications/SKILL.md) | Routine application updates. One bulk package-manager command, then the apps it does not cover. | Not OS updates. Install and removal go through software-management. |
-| [security-management](security-management/SKILL.md) | Assess OS and application security and recommend fixes. | Identifies and coordinates. Does not repeat the other four skills. |
+| [security-management](security-management/SKILL.md) | Assess OS and application security and recommend fixes. | Identifies and coordinates. Does not repeat the other skills. |
+| [Mobile-Android-Debugging](mobile-android-debugging/SKILL.md) | Inspect an Android device over USB debugging and disable or uninstall apps after approval. | The phone or tablet, not the computer. Installing `adb` belongs to software-management. |
+| [Mobile-iOS-Debugging](mobile-ios-debugging/SKILL.md) | Build, log, and triage an iOS app on a simulator or a paired iPhone or iPad. | macOS and Xcode. Installing Xcode belongs to software-management. |
 
 ## Choosing a skill
 
@@ -46,6 +48,8 @@ Skills are instructions and workflows: what to do, which checks to make, and whe
 | "Install Git." Is this application installed? Uninstall, or inspect a package and its dependencies. | software-management |
 | "Check for application updates" or "show outdated software" (check mode). "Update my applications" (update mode). | update-applications |
 | "Check my OS and applications for security issues." Firewall, missing security updates, or risky configuration. | security-management |
+| "Debug my Android phone or tablet." USB debugging, `adb`, or remove unused apps and bloatware from an Android device. | Mobile-Android-Debugging |
+| "Debug my iPhone or iPad app." Xcode, the simulator, device logs, signing, crashes, or Instruments. | Mobile-iOS-Debugging |
 
 If one request needs two skills, start with the row above and hand off the other part. security-management may find missing OS updates, outdated applications, or software that should be installed or removed. The matching skill carries out that change after approval.
 
